@@ -1,16 +1,30 @@
 .car{
     width: 300px;
-    height: 510px;
+    height: 460px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 25px;
+    margin-left: 10px;
 }
 .car img{
     width: 286px;
     height: 286px;
+    border-radius: 8px;
+    margin: 7px;
 }
 
-.car-name{
+.info{
     text-align: center;
 }
 
-.price{
-    text-align: center;
+.cart-button{
+    width: 100%;
+    background-color: orange;
+    border: none;
+    border-radius: 0px 0px 8px 8px;
+    position: absolute;
+    bottom: 0;
 }
+
+.cart-button:hover{background-color: red;}
