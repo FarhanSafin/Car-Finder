@@ -1,9 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Buy from './components/Buy/Buy';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <Buy/>
     </div>
   );
 }

@@ -1,0 +1,16 @@
+.car{
+    width: 300px;
+    height: 510px;
+}
+.car img{
+    width: 286px;
+    height: 286px;
+}
+
+.car-name{
+    text-align: center;
+}
+
+.price{
+    text-align: center;
+}
