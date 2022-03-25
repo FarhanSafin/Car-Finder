@@ -1,8 +1,7 @@
 import React from 'react';
 import './Car.css'
 
-const Car = (props) => {
-    const {handleAddToCart, car} = props;
+const Car = ({handleAddToCart, car}) => {
     const {name, price, img} = car;
     
     return (

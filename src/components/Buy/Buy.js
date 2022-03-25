@@ -5,6 +5,8 @@ import './Buy.css';
 const Buy = () => {
     const [cars, setCars] = useState([]);
 
+    const [cart,  setCart] = useState([])
+
 
     useEffect( () => {
         fetch('cars.json')
@@ -14,7 +16,13 @@ const Buy = () => {
 
 
     const handleAddToCart = (car) => {
-        console.log(car);
+        const newCart = [...cart, car];
+        if(newCart.length < 5){
+            setCart(newCart);
+        }else{
+            alert('Cannot select more than 4 cars.')
+        }
+        
     }
 
 
@@ -32,6 +40,11 @@ const Buy = () => {
 
             <div className="cart-container">
                 <h2>Order placed</h2>
+                <div> <h3>Selected Car:</h3> {
+                        cart.map((car) => (
+                            <p key={car.id}>{car.name}</p>
+                        ))
+                    }</div>
             </div>
         </div>
     );

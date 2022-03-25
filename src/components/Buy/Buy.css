@@ -8,3 +8,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
 }
+
+
+@media screen and (max-width: 300px){
+    .buying-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
