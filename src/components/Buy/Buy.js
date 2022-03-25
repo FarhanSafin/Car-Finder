@@ -13,6 +13,10 @@ const Buy = () => {
     }, [])
 
 
+    const handleAddToCart = (car) => {
+        console.log(car);
+    }
+
 
     return (
         <div className='buying-container'>
@@ -21,6 +25,7 @@ const Buy = () => {
                     cars.map(car=> <Car
                      key={car.id}
                      car={car}
+                     handleAddToCart={handleAddToCart}
                      ></Car>)
                 }
             </div>

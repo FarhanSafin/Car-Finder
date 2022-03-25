@@ -2,7 +2,9 @@ import React from 'react';
 import './Car.css'
 
 const Car = (props) => {
-    const {name, price, img} = props.car; //destruct
+    const {handleAddToCart, car} = props;
+    const {name, price, img} = car;
+    
     return (
         <div className='car'>
             <img src={img} alt="car" />
@@ -10,7 +12,7 @@ const Car = (props) => {
                 <h3>{name}</h3>
                 <h5>Price: {price}</h5>
             </div>
-            <button className='cart-button'>
+            <button onClick={() => handleAddToCart(car)} className='cart-button'>
                 <p>Add to Cart</p>
             </button>
         </div>
