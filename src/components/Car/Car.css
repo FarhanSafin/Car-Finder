@@ -19,8 +19,9 @@
 }
 
 .cart-button{
+    background-color: #e1ecf4;
     width: 100%;
-    background-color: orange;
+    
     border: none;
     border-radius: 0px 0px 8px 8px;
     position: absolute;
@@ -34,7 +35,7 @@
     margin-right: 5px;
 }
 
-.cart-button:hover{background-color: red;}
+.cart-button:hover{background-color: #69a7d4ce;}
 
 @media only screen and (max-width: 688px){
     .car{

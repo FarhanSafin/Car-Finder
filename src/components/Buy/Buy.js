@@ -59,8 +59,8 @@ const Buy = () => {
                             <p key={car.id}>{car.name}</p>
                         ))
                     }</div>
-                    <button onClick={reset}>Reset</button>
-                    <button onClick={random}>Choose one for me</button>
+                    <button className='button' onClick={reset}>Reset</button>
+                    <button className='button' onClick={random}>Choose one for me</button>
             </div>
         </div>
     );
