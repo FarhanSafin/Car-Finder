@@ -25,6 +25,11 @@ const Buy = () => {
         
     }
 
+    const reset = () => {
+        const newCart =[];
+        setCart(newCart);
+    }
+
 
     return (
         <div className='buying-container'>
@@ -45,6 +50,7 @@ const Buy = () => {
                             <p key={car.id}>{car.name}</p>
                         ))
                     }</div>
+                    <button onClick={reset}>Reset</button>
             </div>
         </div>
     );
