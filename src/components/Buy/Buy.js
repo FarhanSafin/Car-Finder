@@ -19,11 +19,20 @@ const Buy = () => {
         const newCart = [...cart, car];
         if(newCart.length < 5){
             setCart(newCart);
-        }else{
+        }
+        else{
             alert('Cannot select more than 4 cars.')
         }
-        
     }
+
+    const random = () => {
+        const newCart = cart;
+        let randomItem = newCart[Math.floor(Math.random()*newCart.length)];
+        alert('Selected item is ' + randomItem.name);
+    }
+
+
+
 
     const reset = () => {
         const newCart =[];
@@ -51,6 +60,7 @@ const Buy = () => {
                         ))
                     }</div>
                     <button onClick={reset}>Reset</button>
+                    <button onClick={random}>Choose one for me.</button>
             </div>
         </div>
     );
