@@ -1,0 +1,26 @@
+.header{
+    background-color: #1C2B35;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 36px;
+}
+
+.header a:hover{
+    color: rgba(132, 163, 204, 0.733);
+}
+
+@media only screen and (max-width: 688px){
+    .header{
+        display: none;
+    }
+}
