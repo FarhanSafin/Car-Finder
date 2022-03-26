@@ -1,6 +1,6 @@
 # Car Finder
 
-Live link of the project: [Car Finder](https://github.com/facebook/create-react-app).
+Live link of the project: [Car Finder](https://car-finder-random.netlify.app/).
 
 
 You will be able to see car. Select cars to buy(upto to 4 cars).
