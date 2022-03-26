@@ -35,3 +35,22 @@
 }
 
 .cart-button:hover{background-color: red;}
+
+@media only screen and (max-width: 688px){
+    .car{
+        width: 280px;
+        height: 450px;
+        border: 1px solid grey;
+        border-radius: 8px;
+        position: relative;
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+
+    .car img{
+        width: 265px;
+        height: 286px;
+        border-radius: 8px;
+        margin: 7px;
+    }
+}

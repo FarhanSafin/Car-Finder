@@ -1,6 +1,7 @@
 .buying-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
+    background-color: rgba(0, 83, 156, 0.308);
 }
 
 .cars-container{
@@ -9,9 +10,27 @@
     gap: 45px;
 }
 
+.cart-container{
+    color: white;
+    text-align: center;
+    background-color: rgba(51, 62, 121, 0.589);
+}
 
-@media screen and (max-width: 300px){
+
+@media only screen and (max-width: 688px){
+    .cars-container{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 40px;
+        background-color: white;
+        gap: 5px;
+    }
     .buying-container{
-        grid-template-columns: 1fr 1fr;
+        display: block;
+        height: 150px;
+        background-color: white;
+    }
+
+    .cart-container{
+        text-align: center;
     }
 }

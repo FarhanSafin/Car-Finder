@@ -60,7 +60,7 @@ const Buy = () => {
                         ))
                     }</div>
                     <button onClick={reset}>Reset</button>
-                    <button onClick={random}>Choose one for me.</button>
+                    <button onClick={random}>Choose one for me</button>
             </div>
         </div>
     );
