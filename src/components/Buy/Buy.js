@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Car from '../Car/Car';
 import './Buy.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash, faCrosshairs } from '@fortawesome/free-solid-svg-icons';
 
 const Buy = () => {
     const [cars, setCars] = useState([]);
@@ -28,7 +30,7 @@ const Buy = () => {
     const random = () => {
         const newCart = cart;
         let randomItem = newCart[Math.floor(Math.random()*newCart.length)];
-        alert('Selected item is ' + randomItem.name);
+        alert('Selected car is ' + randomItem.name);
     }
 
 
@@ -59,8 +61,9 @@ const Buy = () => {
                             <p key={car.id}>{car.name}</p>
                         ))
                     }</div>
-                    <button className='button' onClick={reset}>Reset</button>
-                    <button className='button' onClick={random}>Choose one for me</button>
+                    <button className='button' onClick={reset}>Remove All
+                    <FontAwesomeIcon icon={faTrash} className='icon' /></button>
+                    <button className='button' onClick={random}>Choose one for me<FontAwesomeIcon icon={faCrosshairs} className='icon' /></button>
             </div>
         </div>
     );
